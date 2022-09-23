@@ -1,0 +1,1 @@
+SECRET_KEY = 'dgh1mfgh13mg41651321321h6'

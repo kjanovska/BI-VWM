@@ -1,0 +1,25 @@
+body {
+  background-color: lightgrey;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+#header{
+	margin:auto;
+	text-align:center;
+}
+
+#buttonback{
+  font-family: 'Trebuchet MS', sans-serif;
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#buttonback:hover{
+  background-color: #003b4f;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <title>Aplikace</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+
+<div id="header">
+  <h2>Finding a skyline on a database of smartphones</h2>
+</div>
+<div id="main" class="flex-container">
+  <div id="textdiv" class="flex-child">
+    This application constructs a skyline graph for a database of smartphones depending on two of their attributes.
+    <br>
+    Please choose:
+    <br>
+  <ul class="list">
+  <li>two attributes by which items will be compared</li>
+  <li>for each item choose if you prefer lower or higher values</li>
+  <li>method used for computing a skyline</li>
+</ul>
+You can also view all items and their attributes by clicking "Show database".
+  </div>
+  <div id ="inputdiv" class="flex-child">
+<form action="/" id="form1" method="POST">
+Choose first attribute:
+<br>
+<select name="attr1" id="attr1" form="form1" class="selects">
+  <option value="Price">Price</option>
+  <option value="RAM">RAM</option>
+  <option value="User_memory">User memory</option>
+  <option value="Display_size">Display size</option>
+  <option value="Photo_resolution">Photo resolution</option>
+  <option value="Battery_capacity">Battery capacity</option>
+  <option value="Processor_cores">Processor cores</option>
+  <option value="Weight" selected>Weight</option>
+</select>
+
+<select name="attr3" id="attr3" form="form1" class="selects">
+  <option value="min">Lowest=best</option>
+  <option value="max" selected>Highest=best</option>
+</select>
+<br>
+Choose second attribute:
+<br>
+<select name="attr2" id="attr2" class="selects">
+  <option value="Price">Price</option>
+  <option value="RAM">RAM</option>
+  <option value="User_memory">User memory</option>
+  <option value="Display_size" selected>Display size</option>
+  <option value="Photo_resolution">Photo resolution</option>
+  <option value="Battery_capacity">Battery capacity</option>
+  <option value="Processor_cores">Processor cores</option>
+  <option value="Weight">Weight</option>
+</select>
+
+<select name="attr4" id="attr4" form="form1" class="selects">
+  <option value="min">Lowest=best</option>
+  <option value="max" selected>Highest=best</option>
+</select>
+<br>
+Choose used method:
+<br>
+<select name="attr5" id="attr5" form="form1" class="selects">
+  <option value="plane_sweep" selected>Plane sweep</option>
+  <option value="divide_conquer">Divide and conquer</option>
+  <option value="brute_force">Brute force</option>
+</select>
+<br>
+  <button type="submit" name="submit_button" value="make_graph" class="indexbuttons"> Submit </button>
+<br>
+  <button type="submit" name="submit_button" value="make_table" class="indexbuttons"> Show database </button>
+
+</form>
+</div>
+</div>
+</body>
+</html>
